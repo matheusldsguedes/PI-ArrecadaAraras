@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def cadastro(request):
+    if request.method == 'post':
+        return render(request, 'home.html')
